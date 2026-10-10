@@ -11,3 +11,5 @@ console.log(typeof"Khubaib")
 //object
 console.log(typeof 10)
 console.log(typeof null) 
+
+
