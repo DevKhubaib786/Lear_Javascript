@@ -5,7 +5,7 @@ function one() {
     function two() {
         const website = "youtube";
         console.log(username);
-    }
+    } node .\01basic\
 
     // console.log(website);
         two();

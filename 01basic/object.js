@@ -1,6 +1,8 @@
 // singlton
 //object create
 
+const { jsx } = require("react/jsx-runtime");
+
 // object literal
 
 
