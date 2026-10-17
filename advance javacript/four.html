@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Edit & Remove</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+    
+    <script>
+        // 1. Add Function (Optimized using textContent)
+        function add_language(langName) {
+            const li = document.createElement('li');
+            li.textContent = langName; // textContent supports better performance & security than innerHTML
+            document.querySelector('.language').appendChild(li);
+        }
+
+        add_language("Python");
+        add_language("Typescript");
+        add_language("HTML");
+
+        // 2. Edit (Javascript ko replace karke Java karna)
+        // querySelector single element deta hai
+        const firstLang = document.querySelector("li:first-child");
+        
+        // Method A: outerHTML (String me hona zaroori hai)
+        firstLang.outerHTML = '<li>Java</li>';
+        
+        // Method B (Alternative Best Practice):
+        // firstLang.textContent = "Java";
+
+        // 3. Remove (Aakhri element "HTML" ko delete karna)
+        // Fixed typo: "last-child"
+        const lastLang = document.querySelector("li:last-child");
+        lastLang.remove();
+    </script>
+</body>
+</html>
