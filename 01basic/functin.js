@@ -31,7 +31,7 @@ function calculatecartprice(val1, val2, ...num1)
 {
    return num1
 }
-console.log(calculatecartprice(200,400,500,2000))*/
+console.log(calculatecartprice(200,400,500,2000))
 
 const user = {
     name: "Khubaib",
@@ -53,4 +53,22 @@ function secondvalue(getarray)
 }
 
 console.log(secondvalue(myarray));
+
+const add = (a,b)=> a+b;
+console.log(add(5,3));
+
+const num = [1,2,3,4,5,6,7,8]
+
+const result = num.map(num => num *2);
+console.log(result);*/
+
+function greet(name){
+  console.log("hello" + name);
+
+}
+function processuser(callback)
+{
+    callback(khubaib);
+}
+processuser(greet);
 
